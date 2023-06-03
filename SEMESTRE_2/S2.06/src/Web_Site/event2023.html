@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Événement Culturel 2023</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+  <script src="https://unpkg.com/scrollreveal@4.0.7/dist/scrollreveal.min.js"></script>
+  <script>
+    function translateToEnglish() {
+      // Récupérer tous les éléments de texte à traduire
+var elements = document.querySelectorAll('.translate');
+
+// Traduire chaque élément
+elements.forEach(function(element) {
+  var text = element.dataset.en; // Récupérer le texte en anglais depuis l'attribut data-en
+  element.innerText = text; // Modifier le contenu de l'élément avec le texte en anglais
+});
+    }
+
+    function translateToFrench() {
+      // Code pour traduire le texte en français
+      // Récupérer tous les éléments de texte à traduire
+var elements = document.querySelectorAll('.translate');
+
+// Traduire chaque élément
+elements.forEach(function(element) {
+  var text = element.dataset.fr; // Récupérer le texte en français depuis l'attribut data-fr
+  element.innerText = text; // Modifier le contenu de l'élément avec le texte en français
+});
+    }
+  </script>
+  <style>
+    /* Styles CSS pour la mise en page */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to bottom, #b992db, #ffffff);
+      background-size: 400% 400%;
+      animation: gradientAnimation 10s ease infinite;
+    }
+
+    .animated-background {
+      width: 100%;
+      height: 100%;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      background: linear-gradient(45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+      background-size: 400% 400%;
+      -webkit-animation: gradientAnimation 15s ease infinite;
+      -moz-animation: gradientAnimation 15s ease infinite;
+      animation: gradientAnimation 15s ease infinite;
+    }
+
+    @-webkit-keyframes gradientAnimation {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+
+    @-moz-keyframes gradientAnimation {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+
+    @keyframes gradientAnimation {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+
+    header {
+      background: linear-gradient(#b992db);
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+    }
+
+    header {
+      color: #ffffff; /* Rouge */
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      padding: 10px 20px;
+      margin: 0 10px;
+      position: relative;
+    }
+
+    nav a:before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      bottom: 0;
+      left: 0;
+      background-color: #fff;
+      visibility: hidden;
+      transform: scaleX(0);
+      transition: all 0.3s ease-in-out;
+    }
+
+    nav a:hover:before {
+      visibility: visible;
+      transform: scaleX(1);
+    }
+
+    main {
+      padding: 20px;
+    }
+
+    p {
+      line-height: 1.5;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .event-history {
+      margin-bottom: 30px;
+    }
+
+    .event-history h2 {
+      margin-top: 0;
+    }
+
+    .event-history-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .event-history-item img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      margin-right: 20px;
+    }
+
+    .event-history-item .event-details {
+      flex-grow: 1;
+    }
+
+    .event-history-item .event-details h3 {
+      margin-top: 0;
+    }
+
+    .event-history-item .event-details p {
+      margin-bottom: 10px;
+    }
+
+    .event-reviews {
+      margin-bottom: 30px;
+    }
+
+    .event-reviews h2 {
+      margin-top: 0;
+    }
+
+    .event-reviews-item {
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      padding: 10px;
+      border-radius: 5px;
+    }
+
+    .event-reviews-item h4 {
+      margin-top: 0;
+    }
+
+    .event-reviews-item p {
+      margin-bottom: 0;
+    }
+
+    .logo {
+      display: flex;
+      border-radius: 50%;
+      align-items: center;
+    }
+
+    .logo img {
+      width: 80px;
+      height: 80px;
+      margin-right: 10px;
+      border-radius: 50%;
+    }
+
+    header {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .center-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 50px;
+    }
+
+    .center-container-left,
+    .center-container-right {
+      flex-basis: 45%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .center-container-left img,
+    .center-container-right img {
+      width: 200px;
+      height: auto;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+
+  .text  {
+  text-align: center;
+  font-family: "Arial", sans-serif;
+  font-size: 36px;
+  font-weight: bold;
+  color: #333;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+
+.test {
+  text-align: center;
+}
+
+.test img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.test p {
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  color: #333;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.translate-button {
+  position: fixed;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 9999;
+}
+
+.translate-button button {
+  display: block;
+  margin-bottom: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.translate-button button:hover {
+  background-color: #0056b3;
+}
+
+.translate-button button:active {
+  background-color: #003380;
+}
+
+.translate-button button:focus {
+  outline: none;
+}
+
+</style>
+</head>
+<body>
+<div class="animated-background"></div>
+<header>
+  <div class="logo scroll-reveal">
+    <img class="scroll-reveal logo wow fadeInDown" src="musee-d-orsay.jpg" alt="Logo Musee de France" width="100">
+  </div>
+  <nav class="scroll-reveal">
+    <a class="translate" data-en="Home" data-fr="Acceuil" href="index.html">Accueil</a>
+    <a class="translate" data-en="Event" data-fr="Événements" href="event2023.html">Événements</a>
+    <a class="translate" data-en="Team" data-fr="Equipe" href="equipe.html">Equipe</a>
+  </nav >
+  <div class="translate-button">
+        <button onclick="translateToEnglish()">English</button>
+        <button onclick="translateToFrench()">Français</button>
+      </div>
+</header>
+<main>
+  <div class="container scroll-reveal">
+    <h2 class="text translate" data-en="Event 2023" data-fr="Événement 2023">Événement 2023</h2>
+    <p class="translate" data-en="After several successful years, we are back with the Cultural Event 2023. Immerse yourself in a unique experience that will take you to the heart of art and culture. With even more culture and art, this event will be exceptional for enthusiasts of classical art, contemporary art, urban art, and even for the curious. Join us to rediscover the Cultural Event 2023 and dive into an unforgettable artistic universe.
+
+    We offer a diverse program that highlights the history of art and provides a total immersion into the creativity of our artists. Whether you are passionate about classical art, contemporary art, or urban art, our event will enchant you and ignite your curiosity. Join us to rediscover the Cultural Event 2023 and immerse yourself in an unforgettable artistic universe." data-fr="Après plusieurs succès les années précédentes, nous sommes de retour avec l'Événement Culturel 2023. Plongez dans une expérience unique qui vous transportera au cœur de l'art et de la culture. Avec encore plus de culture et d'art cette événement sera unique pour les passionné d'art classique, d'art contemporain ou d'art urbain ou encore des simples curieux. Rejoignez-nous pour redécouvrir l'Événement Culturel 2023 et plonger dans un univers artistique inoubliable.
+
+    oposer une programmation diversifiée qui met en valeur l'histoire de l'art et offre une immersion totale dans la créativité de nos artistes. Que vous soyez passionné d'art classique, d'art contemporain ou d'art urbain, notre événement saura vous émerveiller et susciter votre curiosité. Rejoignez-nous pour redécouvrir l'Événement Culturel 2023 et plonger dans un univers artistique inoubliable.">Après plusieurs succès les années précédentes, nous sommes de retour avec l'Événement Culturel 2023. Plongez dans une expérience unique qui vous transportera au cœur de l'art et de la culture. Avec encore plus de culture et d'art cette événement sera unique pour les passionné d'art classique, d'art contemporain ou d'art urbain ou encore des simples curieux. Rejoignez-nous pour redécouvrir l'Événement Culturel 2023 et plonger dans un univers artistique inoubliable.
+
+oposer une programmation diversifiée qui met en valeur l'histoire de l'art et offre une immersion totale dans la créativité de nos artistes. Que vous soyez passionné d'art classique, d'art contemporain ou d'art urbain, notre événement saura vous émerveiller et susciter votre curiosité. Rejoignez-nous pour redécouvrir l'Événement Culturel 2023 et plonger dans un univers artistique inoubliable.</p>
+<div class="event-history scroll-reveal">
+  <h2 class="text translate" data-en="Shocking exhibition and event of 2023" data-fr="Exposition et événement choque de 2023">Exposition et événement choque de 2023</h2>
+  <div class="event-history-item">
+    <img class="scroll-reveal wow fadeInLeft" src="Event1.jpg" alt="Exposition 1">
+    <div class="event-details">
+      <h3>Pastel XXL</h3>
+
+
+      <p class="translate" data-en="From this original intervention, a real dialogue with the works presented in the exhibition, will be born, over the weeks, a giant pastel allowing the public to appreciate all the varieties and subtleties of the uses of this medium." data-fr="De cette intervention originale, véritable dialogue avec les œuvres présentées dans l'exposition, naîtra, au fil des semaines, un pastel géant permettant au public d’apprécier toutes les variétés et les subtilités des usages de ce médium.">De cette intervention originale, véritable dialogue avec les œuvres présentées dans l'exposition, naîtra, au fil des semaines, un pastel géant permettant au public d’apprécier toutes les variétés et les subtilités des usages de ce médium.
+
+      </p>
+    </div>
+  </div>
+  <div class="event-history-item scroll-reveal">
+    <img class="scroll-reveal wow fadeInLeft" src="Event2.jpg" alt="Exposition 2">
+    <div class="event-details">
+      <h3>Manet / Degas</h3>
+      <p class="translate" data-en="Édouard Manet (1832-1883) and Edgar Degas (1834-1917) are both essential actors of the new painting of the years 1860-80. This exhibition, which brings together the two painters in the light of their contrasts, forces us to take a new look at their real complicity. It shows what pictorial modernity had heterogeneous, conflictual, and reveals the value of Degas' collection where Manet took a greater place after his death." data-fr="Édouard Manet (1832-1883) et Edgar Degas (1834-1917) sont tous deux des acteurs essentiels de la nouvelle peinture des années 1860-80. Cette exposition qui réunit les deux peintres dans la lumière de leurs contrastes oblige à porter un nouveau regard sur leur réelle complicité. Elle montre ce que la modernité picturale eut d’hétérogène, de conflictuel, et révèle la valeur de la collection de Degas où Manet prit une place plus grande après son décès.">Édouard Manet (1832-1883) et Edgar Degas (1834-1917) sont tous deux des acteurs essentiels de la nouvelle peinture des années 1860-80. Cette exposition qui réunit les deux peintres dans la lumière de leurs contrastes oblige à porter un nouveau regard sur leur réelle complicité. Elle montre ce que la modernité picturale eut d’hétérogène, de conflictuel, et révèle la valeur de la collection de Degas où Manet prit une place plus grande après son décès.</p>
+    </div>
+  </div>
+  <div class="event-history-item scroll-reveal">
+    <img class="scroll-reveal wow fadeInLeft" src="Event3.jpg" alt="Exposition 3">
+    <div class="event-details">
+      <h3>Adam Laloum, piano</h3>
+      <p class="translate" data-en="In the Parisian intellectual circles of the time of Manet and Degas, the debate was fierce, and the quarrels sometimes violent. Schumann was seen according to each other as a neurotic or a poet of the soul, Wagner adored or hated ... An admirer of the Master of Bayreuth, Fauré nevertheless distinguished himself from his influence." data-fr="Dans les cercles intellectuels parisiens du temps de Manet et Degas, le débat était acharné, et les brouilles parfois violentes. Schumann y était vu selon les uns et les autres comme un neurotique ou un poète de l’âme, Wagner adulé ou honni… Admirateur du Maître de Bayreuth, Fauré n’en sut pas moins se démarquer de son influence.">Dans les cercles intellectuels parisiens du temps de Manet et Degas, le débat était acharné, et les brouilles parfois violentes. Schumann y était vu selon les uns et les autres comme un neurotique ou un poète de l’âme, Wagner adulé ou honni… Admirateur du Maître de Bayreuth, Fauré n’en sut pas moins se démarquer de son influence.</p>
+    </div>
+  </div>
+</div>
+<div class="event-reviews scroll-reveal scroll-reveal">
+  <h2 class="text translate" data-en="Testimonials from participants" data-fr="Témoignages des participants">Témoignages des participants</h2>
+  <div class="event-reviews-item">
+    
+    <p class="translate" data-en="'The Event allowed me to rediscover my love for art. The exhibits were fascinating and the atmosphere was electrifying. I highly recommend this experience to all art lovers.'" data-fr="'L'Événement m'a permis de redécouvrir mon amour pour l'art. Les expositions étaient fascinantes et l'atmosphère était électrisante. Je recommande vivement cette expérience à tous les amateurs d'art.'">"L'Événement m'a permis de redécouvrir mon amour pour l'art. Les expositions étaient fascinantes et l'atmosphère était électrisante. Je recommande vivement cette expérience à tous les amateurs d'art."</p>
+  </div>
+  <div class="event-reviews-item scroll-reveal">
+    
+    <p class="translate" data-en="'I am impressed by the diversity of the works presented at the Cultural Event 2023. It was an enriching experience that opened my eyes to new forms of artistic expression.'" data-fr="'Je suis impressionnée par la diversité des œuvres présentées lors de l'Événement Culturel 2023. C'était une expérience enrichissante qui m'a ouvert les yeux sur de nouvelles formes d'expression artistique.'">"Je suis impressionnée par la diversité des œuvres présentées lors de l'Événement Culturel 2023. C'était une expérience enrichissante qui m'a ouvert les yeux sur de nouvelles formes d'expression artistique."</p>
+  </div>
+  <div class="event-reviews-item scroll-reveal">
+    
+    <p class="translate" data-en="'The organizing team did an outstanding job creating such a captivating event. I was amazed by the artistic performances and interactive activities. Congratulations to all the artists and organizers!'" data-fr="'L'équipe organisatrice a fait un travail remarquable pour créer un événement aussi captivant. J'ai été émerveillé par les performances artistiques et les activités interactives. Bravo à tous les artistes et organisateurs !'">"L'équipe organisatrice a fait un travail remarquable pour créer un événement aussi captivant. J'ai été émerveillé par les performances artistiques et les activités interactives. Bravo à tous les artistes et organisateurs !"</p>
+  </div>
+</div>
+
+
+<div class="test scroll-reveal scroll-reveal">
+  <h2 class="text translate" data-en="Finished events" data-fr="Evenement finis">Evenement finis</h2>
+  <img src="EventPasser.jpg" alt="Event">
+  <p class="translate" data-en="Munch's work occupies a pivotal place in artistic modernity. It roots itself in the 19th century while fully embracing the following century. Moreover, his entire body of work is infused with a unique worldview that gives it a powerful symbolist dimension, which extends beyond the few masterpieces he created in the 1890s. Going beyond fin-de-siècle symbolism, Munch transcends this movement beyond its peak, making it the backbone of his work and thus lending it great coherence.
+  " data-fr="L'œuvre de Munch occupe dans la modernité artistique une place charnière. Elle plonge ses racines dans le XIXe siècle pour s’inscrire pleinement dans le suivant. Plus encore, son œuvre tout entière est innervée par une vision du monde singulière lui conférant une puissante dimension symboliste qui ne se réduit pas aux quelques chefs-d'œuvre qu’il a créés dans les années 1890. Dépassant le symbolisme fin-de-siècle, Munch transcende ce mouvement au-delà de son apogée pour en faire l’épine dorsale de son œuvre, lui conférant ainsi sa grande cohérence.">L'œuvre de Munch occupe dans la modernité artistique une place charnière. Elle plonge ses racines dans le XIXe siècle pour s’inscrire pleinement dans le suivant. Plus encore, son œuvre tout entière est innervée par une vision du monde singulière lui conférant une puissante dimension symboliste qui ne se réduit pas aux quelques chefs-d'œuvre qu’il a créés dans les années 1890. Dépassant le symbolisme fin-de-siècle, Munch transcende ce mouvement au-delà de son apogée pour en faire l’épine dorsale de son œuvre, lui conférant ainsi sa grande cohérence.</p>
+</div>
+
+
+    
+</main>
+<script>
+  new WOW().init();
+  ScrollReveal().reveal('.scroll-reveal', {
+    delay: 200,        // Délai avant que l'animation ne se déclenche (en millisecondes)
+    distance: '50px',  // Distance de déplacement de l'élément
+    duration: 800,     // Durée de l'animation (en millisecondes)
+    origin: 'bottom',  // Point d'origine de l'animation (ici, depuis le bas)
+    reset: true,       // Réinitialiser l'animation lorsqu'elle n'est plus visible
+    viewFactor: 0.3    // Pourcentage de l'élément visible avant que l'animation ne se déclenche
+  });
+
+</script>
+</body>
+</html>
