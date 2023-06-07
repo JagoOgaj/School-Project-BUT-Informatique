@@ -1,0 +1,144 @@
+/* Styles généraux */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Styles de la navigation */
+.navbar {
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+}
+
+.navbar-brand {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+.navbar-nav .nav-link {
+    font-size: 18px;
+    color: #333;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #007bff;
+}
+
+/* Styles de l'en-tête */
+header {
+    background-color: #007bff;
+    color: #fff;
+    padding: 20px 0;
+}
+
+header h1 {
+    font-size: 36px;
+    margin: 0;
+}
+
+/* Styles de la section de l'événement */
+.event-section {
+    padding: 50px;
+    text-align: center;
+    background-image: url('musee-dorsay.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.event-section h1 {
+    font-size: 48px;
+    margin: 0;
+    color: #fff;
+}
+
+.event-section p {
+    font-size: 18px;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.event-section img {
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+
+.event-section .learn-more-btn {
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.event-section .learn-more-btn:hover {
+    background-color: #fff;
+    color: #007bff;
+}
+
+/* Styles de la section de l'équipe */
+.team-section {
+    padding: 50px;
+    text-align: center;
+    background-color: #f7f7f7;
+}
+
+.team-card {
+    margin-bottom: 30px;
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.team-card:hover {
+    transform: translateY(-5px);
+}
+
+.team-card img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.team-card h3 {
+    margin-top: 20px;
+    font-size: 24px;
+}
+
+.team-card p {
+    font-size: 16px;
+    color: #777;
+}
+
+/* Transition de chargement entre les pages */
+.fade-in {
+    opacity: 0;
+    animation: fadeInAnimation 0.5s ease-in forwards;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Dégradé de couleur en fond */
+body {
+    background-image: linear-gradient(to bottom, #007bff, #ffffff);
+}
