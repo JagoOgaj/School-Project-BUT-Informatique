@@ -232,25 +232,31 @@ public class TestArdoise{
          */
 
 
-        for (int step = 0; step < 20 ; step++) {
+       
 
 
-                synchronized (ardoise) {
-                    ardoise.wait(250);
-                }
+              for (int step = 0; step < 10 ; step++) {
+            synchronized (ardoise) {
+               ardoise.wait(150);
+            }
+            
+           
+            
+           
+            ardoise.deplacer("",0,0);
+            
+         	oiseau1.deplacer(1, 2);
+            oiseau2.deplacer(1, 2);
+            oiseau3.deplacer(1, 2);
+          
 
-
-                ardoise.deplacer("C",10,0);
-                ardoise.deplacer("GF",10,0);
-                ardoise.deplacer("Q",10,0);
-
-                synchronized (ardoise) {
-                    ardoise.notifyAll();
-
-                }
+            synchronized (ardoise) {
+               ardoise.notifyAll();
+           
         }
-
-
+     }
+      
+    }
 
     }
 
