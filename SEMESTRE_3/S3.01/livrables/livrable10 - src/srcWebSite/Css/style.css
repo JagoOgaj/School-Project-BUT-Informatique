@@ -1,0 +1,537 @@
+/******************************************/
+/* FORMULAIRE*/
+/******************************************/
+label{
+
+
+    border-left:2px solid #FFCC00;
+    padding-left: 6px;
+   
+}
+.formulaire{
+
+    border : 1px solid #FFCC00;
+    margin : 10px;
+    border-radius: 10px 10px 10px 10px; 
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    
+}
+
+.choices__list--multiple .choices__item .choices__button{
+    border-left: 1px solid white;
+
+}
+
+.choices__list--dropdown .choices__item--selectable.is-highlighted {
+    background-color: #FFCC00;
+    color:black;
+}
+/* Style des bulles de sélection */
+.choices__list--multiple .choices__item {
+    background-color: #FFCC00; /* Fond jaune pour les bulles sélectionnées */
+    color: black; /* Texte noir pour les bulles sélectionnées */
+    border: 1px solid #FFCC00;
+}
+
+/* Style de la liste déroulante */
+.choices__list--dropdown .choices__item--choice {
+    background-color: #0c0c0c;/* Fond noir pour les éléments de liste */
+    color: white; /* Texte blanc pour les éléments de liste */
+}
+
+/* Style de la liste déroulante au survol */
+.choices__list--dropdown .choices__item--choice:hover {
+    background-color: #FFCC00; /* Fond jaune au survol */
+    color: black; /* Texte noir au survol */
+}
+
+/* Style pour les messages d'erreur */
+div[id$="-error"] {
+    margin-top: 5px;
+    font-size: 0.9em; /* Texte un peu plus petit */
+}
+
+/******************************************/
+/* NAVBAR*/
+/******************************************/
+.navbar-brand, .navbar-nav .nav-link {
+  transition: transform 0.5s; /* Transition de la couleur sur 0.3 secondes */
+    color: white !important; /* Texte blanc */
+    font-family: 'Calibri', sans-serif; /* Police Calibri */
+    
+}
+
+
+
+.navbar-nav .nav-link:hover {
+    color: #fafaf8 !important; /* Couleur blanc au survol */
+    font-weight: bold; /* Police en gras */
+    transform: scale(1.2);
+}
+
+/* Espacement entre les onglets */
+.navbar-nav .nav-item {
+    margin-right: 80px; /* Espacement plus large entre les onglets */
+}
+
+/* Logo à gauche de la barre de navigation */
+.navbar-brand img {
+    max-width: 60px; /* Ajustez la largeur du logo selon vos besoins */
+    margin-right: 40px; /* Espacement entre le logo et le texte */
+}
+
+/* Style des favicons */
+.navbar-nav .nav-item img {
+    max-width: 20px; /* Ajustez la largeur des favicons selon vos besoins */
+    margin-right: 3px; /* Espacement entre les favicons et le texte */
+    margin-top: -5px; /* Ajustez cette valeur pour déplacer les favicons vers le haut */
+}
+
+.barrederecherche {
+    margin-right: 9rem; /* ou toute autre valeur que vous souhaitez, 3rem est juste un exemple */
+    width: 500px;
+}
+/* Style pour le menu déroulant */
+.nav-item.dropdown .dropdown-menu {
+    background-color: black; /* Fond noir */
+}
+
+/* Style pour les éléments de la liste dans le menu déroulant */
+.nav-item.dropdown .dropdown-menu .dropdown-item {
+    color: white; /* Texte en blanc */
+}
+
+/* Style pour les icônes (favicons) à côté de chaque élément de liste */
+.nav-item.dropdown .dropdown-menu .dropdown-item img {
+    margin-right: 10px; /* Espacement entre l'icône et le texte */
+}
+/* Style pour le survol des éléments du menu déroulant */
+.nav-item.dropdown .dropdown-menu .dropdown-item:hover {
+    background-color: transparent; /* Couleur de fond lors du survol */
+    color: #fff; /* Couleur du texte lors du survol */
+}
+/* Style pour les éléments de la liste dans le menu déroulant */
+.nav-item.dropdown .dropdown-menu .dropdown-item {
+    color: white; /* Texte en blanc */
+    transition: transform 0.2s; /* Animation douce pour le zoom */
+}
+
+/* Style pour les icônes lors du survol des éléments de la liste */
+.nav-item.dropdown .dropdown-menu .dropdown-item:hover  {
+    transform: scale(1.1); /* Agrandit l'icône */
+}
+.login_onglet {
+    border: 2px solid white; /* Encadrement en blanc */
+    padding: 5px; /* Un peu d'espace à l'intérieur du lien */
+    border-radius: 5px; /* Bords arrondis */
+    display: inline-flex; /* Utilisez flex pour aligner l'icône avec le texte */
+    align-items: center; /* Centre verticalement le texte et l'icône */
+    color: white; /* Couleur du texte en blanc */
+  }
+  
+  .Favicon-Login {
+    height: 30px; /* Taille de l'icône */
+    margin-right: 5px; /* Espace entre l'icône et le texte */
+  }
+
+
+
+  .search-container {
+    position: relative; /* Le parent direct doit avoir une position relative */
+    z-index: 10; /* Assurez-vous que la z-index est plus haute que les autres éléments mais inférieure à celle de la nav-bar si elle est fixe */
+    
+}
+
+#search-suggestions {
+    position: absolute;
+    top: 100%; /* Positionne juste en dessous de la barre de recherche */
+    left: 0;
+    right: 0; /* Assurez-vous que la liste prend la pleine largeur du parent */
+    background: white; /* Ou toute autre couleur de fond désirée */
+    border-top: none;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Optionnel */
+    z-index: 1000; /* Assurez-vous qu'il s'affiche au-dessus des autres contenus */
+    max-height: auto; /* Optionnel, limite la hauteur de la liste des suggestions */
+    overflow-y: auto; /* Optionnel, ajoute un défilement si la liste est trop longue */
+    width: 500px;
+}
+
+
+ 
+/* Jaune (#FFCE32) , coquelicot doré (#FEC501) ,  Jaune soleil (#FFD43A)*/
+.list-group-item {
+    background: black; /* Définit la couleur d'arrière-plan des éléments de la liste en noir */
+    border: 1px solid #c7c7c6; /* Ajoute une bordure solide grise claire autour de chaque élément de la liste */
+    display: flex; /* Utilise Flexbox pour aligner les enfants de .list-group-item */
+    align-items: center; /* Centre verticalement les enfants à l'intérieur de chaque élément de la liste */
+    padding: 2px; /* Ajoute un espace interne autour du contenu de chaque élément de la liste */
+    border-bottom: 1px solid #c7c7c6; /* Définit la couleur de la bordure du bas pour séparer visuellement les éléments */
+}
+.list-group-item a{
+
+
+    border: transparent;
+}
+.list-group a{
+
+
+    color : #FFCC00; /*couleur du "voir tous les resultat"*/
+}
+.suggestion-image {
+    width: 80px; /* Ajustez selon la taille souhaitée pour vos images */
+    height: 85px; /* Ajustez pour correspondre à la largeur si vous voulez des images carrées */
+    object-fit: contain; /* Utilisez 'contain' pour s'assurer que l'image entière est visible */
+    margin-right: 10px; /* Ajustez la marge si nécessaire */
+    border : #555;
+}
+
+.suggestion-details {
+    flex-grow: 1; /* Permet au conteneur de détails de prendre tout l'espace restant dans .list-group-item */
+}
+
+.suggestion-1 {
+    font-size: 1em; /* Augmente la taille de la police pour le nom, le rendant plus grand */
+    margin-bottom: 2px; /* Ajoute une petite marge en dessous du nom pour l'espacer du reste du texte */
+    color: white;
+}
+
+.suggestion-2 {
+    font-style: italic; /* Rend le texte du rôle en italique */
+    color: #777; /* Définit la couleur du texte du rôle en gris moyen */
+    margin-bottom: 0;
+}
+
+.suggestion-3 {
+    color: #555; /* Définit la couleur du texte de la date en gris foncé */
+}
+.suggestion-4 {
+    color: #555; /* Définit la couleur du texte de la date en gris foncé */
+}
+
+.see-all-results {
+    text-align: center; /* Centre le texte de "Voir tous les résultats" */
+    padding: 3px; /* Ajoute un espace interne de 10px autour du texte */
+    font-weight: bold; /* Rend le texte "Voir tous les résultats" en gras */
+    cursor: pointer; /* Change le curseur en pointeur pour indiquer que c'est cliquable */
+}
+
+
+/******************************************/
+/* FOOTER*/
+/******************************************/
+
+footer {
+    background-color: #000000; /* Fond noir */
+    color: #ffffff; /* Écriture blanche */
+}
+
+
+
+
+.footer-links li {
+    transition: transform 0.4s; /* Animation douce */
+    padding-top: 40px;
+    padding-right: 55px;
+
+}
+footer a {
+    color: #ffffff !important; /* Couleur du texte blanc pour les liens */
+    text-decoration: none !important; /* Supprime le soulignement des liens */
+}
+
+
+.footer-links li:hover {
+    color: #ffffff !important; /* Couleur blanc au survol */
+    font-weight: bold; /* Police en gras */
+    transform: scale(1.3);/*grossissement*/
+}
+
+/******************************************/
+/* CORPS*/
+/******************************************/
+body{
+
+    background: linear-gradient(to bottom, #0c0c0c, #1f1f1f); /* Dégradé du noir (#0c0c0c) vers le blanc (#1f1f1f) */
+    color : White;
+    font-family: 'Calibri', sans-serif;
+
+
+}
+h1{
+
+    color:#FFCC00;
+}
+/******************************************/
+/* RESULTAT*/
+/******************************************/
+#pagination-container button {
+    padding: 5px 10px;
+    margin: 0 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: #FFCC00;
+    cursor: pointer;
+    color:white;
+  }
+  
+  #pagination-container button.active {
+    background-color: #2C2C2B;
+    color: #FFCC00;
+    border: none;
+  }
+  
+  #pagination-container button:hover {
+    filter: brightness(55%); /* Assombrit le bouton de 15% */
+  }
+  #pagination-container1 button {
+    padding: 5px 10px;
+    margin: 0 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: #FFCC00;
+    cursor: pointer;
+    color:white;
+  }
+  
+  #pagination-container1 button.active {
+    background-color: #2C2C2B;
+    color: #FFCC00;
+    border: none;
+  }
+  
+  #pagination-container1 button:hover {
+    filter: brightness(55%); /* Assombrit le bouton de 15% */
+  }
+  #pagination-container2 button {
+    padding: 5px 10px;
+    margin: 0 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: #FFCC00;
+    cursor: pointer;
+    color:white;
+  }
+  
+  #pagination-container2 button.active {
+    background-color: #2C2C2B;
+    color: #FFCC00;
+    border: none;
+  }
+  
+  #pagination-container2 button:hover {
+    filter: brightness(55%); /* Assombrit le bouton de 15% */
+  }
+  
+.cardrecherche{
+
+  background-color: #2C2C2B; /* Gris foncé */
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23); /* Effet d'ombre 3D */
+  display: flex;
+  border: 1px solid rgba(0,0,0,.125);
+  border-radius: .25rem;
+  margin-bottom: 3rem;
+  overflow: hidden;
+  text-decoration: none; /* Enlève le soulignement des liens */
+}
+.cardrecherche:hover {
+    transform: scale(1.05); /* Zoom de 5% */
+    transition: transform 0.3s ease; /* Animation fluide sur 0.3 secondes */
+    border: 1px solid #FFCC00;
+  }
+  .cardrecherche img {
+    width: 150px;
+    object-fit: cover; /* Assure que l'image couvre l'espace dédié */
+    border-top-left-radius: .25rem;
+    border-bottom-left-radius: .25rem;
+  }
+  
+  .card-bodyrecherche {
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-grow: 1; /* Permet à card-body de prendre l'espace restant */
+  }
+  
+  .card-1recherche {
+    margin-bottom: 0.25rem;
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+  
+  .card-2recherche {
+    margin-bottom: 0.25rem;
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  .card-3recherche {
+    margin-bottom: 0.25rem;
+    font-size: 1rem;
+    color: #666;
+  }
+  .card-4recherche {
+    margin-bottom: 0.25rem;
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  .card-5recherche {
+    margin-bottom: 0.25rem;
+    font-size: 1rem;
+    color: #666;
+  }
+  
+.cssmodal{
+
+  padding: 0px 0px;
+  font-size: 13px;
+  border-radius: 36px;
+  background: #FFCC00;
+  border-color: #FFCC00;
+}
+.cssmodal:hover{
+
+  background: #b69202;
+  border-color: #FFCC00;
+
+}
+/******************************************/
+/* ACCUEIL BANDE ANNONCE*/
+/******************************************/
+#videoModal {
+  display: none;
+  position: fixed; /* Position fixed par rapport au viewport */
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%); /* Centrer la modale */
+  z-index: 1000; /* S'assurer qu'elle est au-dessus des autres éléments */
+  background-color: black; /* Ou toute autre couleur de fond */
+  padding: 30px;
+}
+
+
+#modalContent {
+  position: relative; /* Pour positionner les éléments fils comme le bouton de fermeture */
+}
+#closeModal {
+  cursor: pointer;
+  position: absolute;
+  top: -8px;
+  right: 3px;
+  font-size: 24px; /* Ajustez la taille comme nécessaire */
+  color: #FFCC00; /* Ou toute autre couleur */
+}
+
+body.hovering-over-video .composent-card:hover {
+  transform: none;
+  border: none;
+  text-decoration: none;
+  color: inherit;
+}
+.openModal {
+  color: white; /* Couleur du texte du lien */
+  text-decoration: none; /* Retire le soulignement par défaut des liens */
+}
+
+.openModal:hover {
+  text-decoration: none; /* Assure qu'il n'y a pas de soulignement au survol */
+  color: white;
+}
+
+
+/******************************************/
+/* FONCTIONNALITÉS BAS DE PAGE*/
+/******************************************/
+
+
+.feature-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.feature-box {
+  display: flex;
+  align-items: center;
+  border: 1px solid #FFCC00;
+  padding: 20px;
+  margin: 10px;
+  flex-basis: calc(33.333% - 20px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);}
+
+.feature-icon {
+  width: 50px; /* ou la taille que vous préférez */
+  margin-right: 20px; /* espace entre l'image et le texte */
+}
+
+.feature-text {
+  text-align: left;
+}
+
+.feature-box h2 {
+  margin-bottom: 15px;
+  color: #000;
+  font-size: 18px;
+}
+
+.feature-box p {
+  color: #666;
+  font-size: 16px;
+}
+
+@media (max-width: 991px) {
+  .feature-box {
+    flex-direction: column;
+    text-align: center;
+    flex-basis: auto;
+  }
+
+  .feature-icon {
+    margin-bottom: 20px; /* espace sous l'image lorsque la boîte est en colonne */
+    margin-right: 0;
+  }
+
+  .feature-text {
+    text-align: center;
+  }
+}
+/******************************************/
+/* CHARGEMENT*/
+/******************************************/
+.loader {
+  border: 5px solid #f3f3f3; /* Gris clair pour le fond du spinner */
+  border-top: 5px solid #FFCC00; /* Bleu pour le spinner */
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#loadingOverlay {
+  display: none; /* Caché par défaut */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.75); /* Fond semi-transparent noir */
+  z-index: 9999;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+#videoUnavailable{
+
+  margin:150px;
+  font-size: 20px;
+
+
+}
+
