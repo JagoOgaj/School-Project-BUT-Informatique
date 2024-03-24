@@ -32,7 +32,7 @@ Avant de pouvoir utiliser le site, assurez-vous d'avoir les éléments suivants 
 
 2. Clonez ce dépôt sur votre machine en utilisant la commande suivante :
     ```
-    git clone [text](https://github.com/Samy93000/School-Project.git)
+    git clone <url>
     ```
 
 3. Placez le dossier cloné dans le répertoire de votre serveur web (par exemple, dans le répertoire `htdocs` pour Apache).
