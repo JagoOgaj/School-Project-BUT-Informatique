@@ -24,9 +24,6 @@ Ce répertoire contient tous les livrables associés au projet [Nom du Projet]. 
 8. **Rapport sur trois algorithmes au sein de l'application** (Rendu : 19 janvier 2024)
    - [Livrable 8](./livrable8/README.md)
 
-9. **Prototypage de l'application** (Rendu : 22 décembre 2023)
-   - [Livrable 9](./livrable9/README.md)
-
 10. **Première démonstration de l'application fonctionnelle** (Rendu : 16 février 2024)
     - [Livrable 10](./livrable10/README.md)
 
