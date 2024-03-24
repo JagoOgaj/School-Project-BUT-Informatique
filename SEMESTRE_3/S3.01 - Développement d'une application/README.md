@@ -41,15 +41,12 @@ Divers logiciels vous seront aussi nécessaires pour rendre vos livrables.
 
 4. **Analyse de la base de données fournie et création de schémas SQL correspondant ; scripts shells de récupération des données les plus récentes et chargement/remplacement dans la base** (format : scripts shells ; schémas SQL ; graphiques UML ; indicateurs de performance (temps de chargement, récupération, etc.) ; rendu collectif, 22 décembre 2023) (Compétence 3 / Compétence 4)
 
-5. **Création de rapports individuels évolutifs sur le travail réalisé** (format : texte mis en page ; à la fin de chaque période de deux semaines, rendu individuel) (Compétence 1 / Compétence 6)
-
 6. **Création d’un rapport de management pour la période dont vous allez être responsable détaillant la répartition et la planification des tâches, ainsi que l’évaluation individuelles de ces tâches par le manager** (rendu individuel au début de la période suivant la période où un élève remplit le rôle de manager). (Compétence 5 / Compétence 6). Précisions: à faire avec le logiciel de votre choix (Excel par exemple), inclure des diagrammes de Gantt, des tableaux de suivi, etc.
 
 7. **Création de personas de clients susceptibles d’utiliser le site** (17 novembre 2023, ; rendu individuel) (Compétence 1 / Compétence 5)
 
 8. **Rapport sur trois algorithmes au sein de l’application** (approximation d’un nom ; trouver des éléments en commun dans deux listes de façon optimale ; trouver la plus courte chaîne entre deux éléments dans le graphe “a joué dans”) (rendu collectif ; 19 janvier 2024) (Compétence 2)
 
-9. **Prototypage de l’application** (tâches à effectuer, user stories, scénarios, design, présentation de prototype avec des logiciels de type Figma, Balsamiq ou autres ; rendu 22 décembre 2023). (Compétence 1)
 
 10. **Première démonstration de l’application fonctionnelle** (16 février 2024) (Compétence 1 / Compétence 2 / Compétence 4)
 
