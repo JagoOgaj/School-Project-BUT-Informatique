@@ -32,12 +32,12 @@ Avant de pouvoir utiliser le site, assurez-vous d'avoir les éléments suivants 
 
 2. Clonez ce dépôt sur votre machine en utilisant la commande suivante :
     ```
-    git clone https://github.com/GraceKoffi/SAE-Scander-Samy-Grace-Younes-Azzedine.git
+    git clone [text](https://github.com/Samy93000/School-Project.git)
     ```
 
 3. Placez le dossier cloné dans le répertoire de votre serveur web (par exemple, dans le répertoire `htdocs` pour Apache).
 
-4. Ouvrez votre navigateur web et accédez au site en utilisant l'URL appropriée (par exemple, `http://localhost/sae/SAE-Scander-Samy-Grace-Younes-Azzedine/livrables/livrable10/src/?`).
+4. Ouvrez votre navigateur web et accédez au site en utilisant l'URL appropriée.
 
 5. Vous devriez maintenant voir le site de gestion de films. Assurez-vous d'avoir correctement configuré la base de données en suivant les étapes ci-dessus.
 
