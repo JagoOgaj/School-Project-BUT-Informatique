@@ -50,7 +50,7 @@ L'application inclut une page de paramètres où les utilisateurs peuvent person
 Ce projet est réalisé par :
 - Samy OKI
 - Scander ALIOUI
-- Zakaria CHAOUI
+- Zakaria CHAOUCH
 
 Étudiants en deuxième année de BUT informatique en Alternance à l'Université Paris 13.
 
