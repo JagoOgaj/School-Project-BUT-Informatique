@@ -63,8 +63,4 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         String query = "SELECT * FROM " + TABLE_NAME + " LIMIT ? OFFSET ?";
         return db.rawQuery(query, new String[]{String.valueOf(limit), String.valueOf(offset)});
     }
-
-
-
-    //todo faire les méthodes de récupérations des données
 }
