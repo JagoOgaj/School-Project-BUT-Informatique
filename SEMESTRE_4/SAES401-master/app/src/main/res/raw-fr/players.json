@@ -1,0 +1,25 @@
+{
+  "players": [
+    {
+      "name": "Thane Braddock, le Chevalier",
+      "damage": "3d6",
+      "image": "choix1",
+      "image_sansfond": "sf_choix1",
+      "healPoint": 3
+    },
+    {
+      "name": "Tudric Greyhelm, l'Elfe ",
+      "damage": "3d4",
+      "image": "choix2",
+      "image_sansfond": "sf_choix2",
+      "healPoint": 4
+    },
+    {
+      "name": "Faelan Oakheart, le Forgeron",
+      "damage": "2d6",
+      "image": "choix3",
+      "image_sansfond": "sf_choix3",
+      "healPoint": 5
+    }
+  ]
+}

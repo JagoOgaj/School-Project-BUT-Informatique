@@ -1,0 +1,128 @@
+{
+  "bouclier_N": {
+    "nom": "Normal Shield",
+    "description": "Adds +1 to the score",
+    "degat": "+1",
+    "image": "bouclier_n"
+  },
+  "bouclier_R": {
+    "nom": "Rare Shield",
+    "description": "Adds +2 to the score",
+    "degat": "+2",
+    "image": "bouclier_r"
+  },
+  "bouclier_SR": {
+    "nom": "Super Rare Shield",
+    "description": "Doubles the score",
+    "degat": "x2",
+    "image": "bouclier_sr"
+  },
+  "bouclier_SSR": {
+    "nom": "Ultra Rare Shield",
+    "description": "Triples the score",
+    "degat": "x3",
+    "image": "bouclier_ssr"
+  },
+  "epee_N": {
+    "nom": "Normal Sword",
+    "description": "Adds +2 to the score",
+    "degat": "+2",
+    "image": "epee_n"
+  },
+  "epee_R": {
+    "nom": "Rare Sword",
+    "description": "Adds +4 to the score",
+    "degat": "+4",
+    "image": "epee_r"
+  },
+  "epee_SR": {
+    "nom": "Super Rare Sword",
+    "description": "Doubles the score",
+    "degat": "x2",
+    "image": "epee_sr"
+  },
+  "epee_SSR": {
+    "nom": "Ultra Rare Sword",
+    "description": "Triples the score",
+    "degat": "x3",
+    "image": "epee_ssr"
+  },
+  "lance_N": {
+    "nom": "Normal Lance",
+    "description": "Adds +2 to the score",
+    "degat": "+2",
+    "image": "lance_n"
+  },
+  "lance_R": {
+    "nom": "Rare Lance",
+    "description": "Adds +5 to the score",
+    "degat": "+5",
+    "image": "lance_r"
+  },
+  "lance_SR": {
+    "nom": "Super Rare Lance",
+    "description": "Doubles the score",
+    "degat": "x2",
+    "image": "lance_sr"
+  },
+  "lance_SSR": {
+    "nom": "Ultra Rare Lance",
+    "description": "Multiplies the score by 25",
+    "degat": "x25",
+    "image": "lance_ssr"
+  },
+  "arc_N": {
+    "nom": "Normal Bow",
+    "description": "Adds +1 to the score",
+    "degat": "+1",
+    "image": "arc_n"
+  },
+  "arc_R": {
+    "nom": "Rare Bow",
+    "description": "Adds +3 to the score",
+    "degat": "+3",
+    "image": "arc_r"
+  },
+  "arc_SR": {
+    "nom": "Super Rare Bow",
+    "description": "Doubles the score",
+    "degat": "x2",
+    "image": "arc_sr"
+  },
+  "arc_SSR": {
+    "nom": "Ultra Rare Bow",
+    "description": "Multiplies the score by 25",
+    "degat": "x25",
+    "image": "arc_ssr"
+  },
+  "grimoire_N": {
+    "nom": "Normal Grimoire",
+    "description": "Adds +3 to the score",
+    "degat": "+3",
+    "image": "grimoire_n"
+  },
+  "grimoire_R": {
+    "nom": "Rare Grimoire",
+    "description": "Adds +6 to the score",
+    "degat": "+6",
+    "image": "grimoire_r"
+  },
+  "grimoire_SR": {
+    "nom": "Super Rare Grimoire",
+    "description": "Doubles the score",
+    "degat": "x2",
+    "image": "grimoire_sr"
+  },
+  "grimoire_SSR": {
+    "nom": "Ultra Rare Grimoire",
+    "description": "Multiplies the score by 25",
+    "degat": "x25",
+    "image": "grimoire_ssr"
+  },
+  "clee_maudite": {
+    "nom": "Cursed Key",
+    "description": "Cursed key with single-use teleportation properties",
+    "degat": "",
+    "image": "cle"
+  }
+}

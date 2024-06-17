@@ -1,0 +1,54 @@
+<resources>
+    <string name="app_name">SAES401</string>
+    <string name="start_game">Start new adventure</string>
+    <string name="continue_game">Continue your adventure</string>
+    <string name="title">Ninja Warrior</string>
+    <string name="title2">Legends of the Kingdom of Paloria</string>
+    <string name="credits">Credits</string>
+    <string name="previous">Previous game</string>
+    <string name="creditsName">AlIOUI Scander\n CHAOUCH Zakaria\n OKI Samy</string>
+    <string name="go_back">Go back to menu</string>
+    <string name="hp">HP : %1$d</string>
+    <string name="time">%1$d s</string>
+    <string name="makeAction">Do</string>
+    <string name="makeSpeak">Speak</string>
+    <string name="inventory">Inventory</string>
+    <string name="parametre">Parameter</string>
+    <string name="save">Save</string>
+    <string name="langue">Language :  </string>
+    <string-array name="langues_array">
+        <item>French</item>
+        <item>English</item>
+    </string-array>
+    <string name="menu">Main menu</string>
+    <string name="take">Take</string>
+    <string name="volume">Volume :  </string>
+    <string name="saveSetting">Saved parameters</string>
+    <string name="credits_text">
+        "This game was created by ALIOUI Scander, OKI Samy and CHAOUCH Zakaria. A huge thank you to everyone who contributed to this project and to all the players who have supported us throughout this adventure. We hope you enjoyed playing as much as we enjoyed creating this game. Stay tuned for our future creations!"
+    </string>
+    <string name="choiseperso">Please choose your character</string>
+    <string name="get">recover</string>
+    <string name="item">Please select an item</string>
+    <string name="stat">Statistics</string>
+    <string name="next">Next</string>
+    <string name="prev">Previous</string>
+    <string name="takeItem">Take</string>
+    <string name="nullMatchFight">Equality</string>
+    <string name="winFight">You have win</string>
+    <string name="looseFight">You lost</string>
+    <string name="useDice">Use dices</string>
+    <string name="use">Use</string>
+    <string name="delete">Delete scores</string>
+    <string name="errorInsertItem">Inserting a new item replaces a randomly acquired item</string>
+    <string name="errorGameContinue">No saved game</string>
+    <string name="continuer">Continue</string>
+    <string name="win">You win !</string>
+    <string name="lose">You lost !</string>
+    <string name="score">Score:</string>
+    <string name="duration">Duration:</string>
+    <string name="max_damage_to_player">Max Damage to Player:</string>
+    <string name="max_damage_to_enemy">Max Damage to Enemy:</string>
+    <string name="heart_lost">Heart Lost:</string>
+    <string name="winResult">Result :</string>
+</resources>

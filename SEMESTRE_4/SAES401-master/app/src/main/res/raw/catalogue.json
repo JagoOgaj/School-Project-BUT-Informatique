@@ -1,0 +1,16 @@
+{
+  "catalogues": [
+    {
+      "fichier": "niveau1.json",
+      "naration": "Your village, a peaceful haven in the realm of Paloria, is suddenly invaded by malevolent creatures. Armed with courage, you take up arms to defend your home and head towards the Dark Crypts, where answers to the invaders' attacks might be hidden."
+    },
+    {
+      "fichier": "niveau2.json",
+      "naration": "Continuing your quest, you delve deeper into the mysteries of the Black Claw Forest, a place where shadows and dangers multiply. There, you discover a secluded cave that holds the secrets to understanding and repelling the malevolent forces."
+    },
+    {
+      "fichier": "niveau3.json",
+      "naration": "Your journey leads you to the Enchanted Ruins, the heart of darkness where the most terrifying creatures have established their stronghold. In an epic confrontation, you challenge evil in its own sanctuary. Victorious, you secure the safety of Paloria and vow to protect the kingdom forever."
+    }
+  ]
+}

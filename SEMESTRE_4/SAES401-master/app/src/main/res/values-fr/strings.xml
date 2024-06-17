@@ -1,0 +1,54 @@
+<resources>
+    <string name="app_name">SAES401</string>
+    <string name="start_game">Commencez une nouvelle aventure</string>
+    <string name="continue_game">Continuez votre aventure</string>
+    <string name="title">Ninja Warrior</string>
+    <string name="title2">Les Légendes du Royaume de Paloria</string>
+    <string name="credits">Credits</string>
+    <string name="previous">Précédentes parties</string>
+    <string name="creditsName">AlIOUI Scander \n CHAOUCH Zakaria \n OKI Samy</string>
+    <string name="go_back">Revenir au menu</string>
+    <string name="hp">PV : %1$d</string>
+    <string name="time">%1$d s</string>
+    <string name="makeAction">Faire</string>
+    <string name="makeSpeak">Parler</string>
+    <string name="inventory">Inventaire</string>
+    <string name="parametre">Paramètre</string>
+    <string name="save">Enregistrer</string>
+    <string name="langue">Langue :  </string>
+    <string-array name="langues_array">
+        <item>Français</item>
+        <item>Anglais</item>
+    </string-array>
+    <string name="menu">Menu principal</string>
+    <string name="take">Prendre</string>
+    <string name="volume">Volume :  </string>
+    <string name="saveSetting">Paramètres sauvegardés</string>
+    <string name="credits_text">
+        "Ce jeu a été créé par ALIOUI Scander, OKI Samy et CHAOUCH Zakaria. Un grand merci à tous ceux qui ont contribué à ce projet et à tous les joueurs qui nous ont soutenus tout au long de cette aventure. Nous espérons que vous avez apprécié jouer autant que nous avons pris plaisir à créer ce jeu. Restez à l\'écoute pour nos futures créations!"
+    </string>
+    <string name="choiseperso">Veuillez choisir votre personnage</string>
+    <string name="get">récupérer</string>
+    <string name="item">Veuillez choisir un item</string>
+    <string name="stat">Statistiques</string>
+    <string name="next">Suivant</string>
+    <string name="prev">Précédent</string>
+    <string name="takeItem">Prendre</string>
+    <string name="nullMatchFight">" Egalité"</string>
+    <string name="winFight">Vous avez gagné</string>
+    <string name="looseFight">Vous avez perdu</string>
+    <string name="useDice">Utiliser les dès</string>
+    <string name="use">Utiliser</string>
+    <string name="delete">Supprimer les scores</string>
+    <string name="errorInsertItem">L\'insertion d\'un nouveau item remplacer un item acquis de maniere aleatoire</string>
+    <string name="errorGameContinue">Aucune partie sauvegardée</string>
+    <string name="continuer">Continuer</string>
+    <string name="win">Tu as gagné !</string>
+    <string name="lose">Tu as perdu !</string>
+    <string name="score">Score:</string>
+    <string name="duration">Durée:</string>
+    <string name="max_damage_to_player">Dégats maximum au joueur:</string>
+    <string name="max_damage_to_enemy">Dégats maximum au ennemi:</string>
+    <string name="heart_lost">Vie perdue:</string>
+    <string name="winResult">Résultat:</string>
+</resources>

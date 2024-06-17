@@ -1,0 +1,108 @@
+{
+  "objets": [
+    "bouclier_SR",
+    "epee_SR",
+    "lance_SR",
+    "arc_SR",
+    "grimoire_SR",
+    "bouclier_SSR",
+    "epee_SSR",
+    "lance_SSR",
+    "arc_SSR",
+    "grimoire_SSR"
+  ],
+  "nom": "The Cursed Conjurers",
+  "lieu": "The Enchanted Ruins",
+  "enemies": [
+    {
+      "nom": "Zarek the Sorcerer",
+      "description": "Outcast sorcerer, master of forbidden arcane arts, he offers his services to overturn the natural order.",
+      "image": "zarek_le_sorcier",
+      "image_sansfond": "sf_zarek_le_sorcier",
+      "win": {
+        "dropPossible": ["bouclier_SR", "epee_SR","lance_SR"],
+        "narration": "With the defeat of Zarek, the shadows that shrouded the ruins slowly dissipate."
+      },
+      "loose": {
+        "narration": "Zarek's dark magic engulfs you, leaving you hopeless against his ancient powers."
+      },
+      "stats": {
+        "pv": 3,
+        "degats": "1d6",
+        "items": ["bouclier_SR", "epee_SR", "lance_SR"]
+      }
+    },
+    {
+      "nom": "Helga the Enchantress",
+      "description": "Uses her dark magic to corrupt and control, essential for Zarek's plans.",
+      "image": "helga_l_enchanteresse",
+      "image_sansfond": "sf_helga_l_enchanteresse",
+      "win": {
+        "dropPossible": ["lance_SR", "arc_SR","clee_maudite"],
+        "narration": "By breaking Helga's spell, you free the spirits she had bewitched."
+      },
+      "loose": {
+        "narration": "Helga's charm overwhelms you, binding you to her will."
+      },
+      "stats": {
+        "pv": 4,
+        "degats": "2d4",
+        "items": ["arc_SR", "grimoire_SR", "bouclier_SSR"]
+      }
+    },
+    {
+      "nom": "Baldur the Ancient",
+      "description": "Keeper of ancient knowledge and malevolent spells, enhances the magical abilities of the group.",
+      "image": "baldur_l_ancien",
+      "image_sansfond": "sf_baldur_l_ancien",
+      "win": {
+        "dropPossible": ["grimoire_SR", "bouclier_SSR","lance_SSR"],
+        "narration": "Baldur, stripped of his malevolent runes, collapses, returning his powers to the earth."
+      },
+      "loose": {
+        "narration": "Baldur's incantations wrap you in a web of pain and despair."
+      },
+      "stats": {
+        "pv": 5,
+        "degats": "2d5",
+        "items": ["epee_SSR", "lance_SSR", "arc_SR"]
+      }
+    },
+    {
+      "nom": "Lyria the Siren",
+      "description": "Uses her song to hypnotize and lure her victims into the depths to drown them.",
+      "image": "lyria_la_sirene",
+      "image_sansfond": "sf_lyria_la_sirene",
+      "win": {
+        "dropPossible": ["epee_SSR", "lance_SSR", "bouclier_SSR"],
+        "narration": "Silence falls over the ruins as Lyria, defeated, returns to the depths from whence she came."
+      },
+      "loose": {
+        "narration": "Lyria's melodious song irresistibly draws you towards a watery end."
+      },
+      "stats": {
+        "pv": 5,
+        "degats": "3d4",
+        "items": ["grimoire_SSR", "bouclier_SSR", "epee_SSR"]
+      }
+    },
+    {
+      "nom": "Aldrok, the Goblin Knight",
+      "description": "Elite assassin, executes Zarek's orders with deadly precision.",
+      "image": "aldrok_le_chevalier_gobelin",
+      "image_sansfond": "sf_aldrok_le_chevalier_gobelin",
+      "win": {
+        "dropPossible": ["arc_SSR", "grimoire_SSR", "epee_SSR"],
+        "narration": "Aldrok, deprived of his mission, finally falls, his last blow missed."
+      },
+      "loose": {
+        "narration": "Quick and deadly, Aldrok strikes where you least expect it, ending your quest."
+      },
+      "stats": {
+        "pv": 6,
+        "degats": "2d6",
+        "items": ["lance_SSR", "arc_SSR", "grimoire_SSR"]
+      }
+    }
+  ]
+}

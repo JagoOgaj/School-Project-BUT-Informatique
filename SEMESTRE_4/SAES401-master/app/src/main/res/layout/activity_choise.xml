@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+    <ImageView
+        android:id="@+id/imageViewForest"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/choixportrait"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <LinearLayout
+        android:id="@+id/choiseBeforeLevel"
+        android:layout_width="match_parent"
+        android:layout_height="116dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.275" >
+
+        <ImageButton
+            android:id="@+id/imageButton1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:scaleType="fitXY"
+            android:background="#00000000"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:contentDescription="Choix1" />
+
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:scaleType="fitXY"
+            android:background="#00000000"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:contentDescription="Choix2"
+             />
+
+        <ImageButton
+            android:id="@+id/imageButton3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:scaleType="fitXY"
+            android:background="#00000000"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:contentDescription="Choix3" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textLevel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:text="@string/item"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:fontFamily="@font/dpcomic"
+        app:layout_constraintBottom_toTopOf="@+id/takeItem"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/choiseBeforeLevel" />
+
+    <Button
+        android:id="@+id/takeItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#A3E34C"
+        android:fontFamily="@font/dpcomic"
+        android:text="@string/get"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/choiseBeforeLevel"
+        app:layout_constraintVertical_bias="0.846" />
+
+    <TextView
+        android:id="@+id/textWarning"
+        android:layout_width="290dp"
+        android:layout_height="100dp"
+        android:fontFamily="@font/dpcomic"
+        android:gravity="center"
+        android:textColor="#E10808"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/choiseBeforeLevel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageViewForest"
+        app:layout_constraintVertical_bias="0.62" />
+</androidx.constraintlayout.widget.ConstraintLayout>

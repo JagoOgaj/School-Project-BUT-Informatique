@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+                android:oneshot="false">
+    <!-- res/drawable/my_animation.xml -->
+
+        <item android:drawable="@drawable/dicetest1" android:duration="125" />
+        <item android:drawable="@drawable/dicetest2" android:duration="125" />
+        <item android:drawable="@drawable/dicetest3" android:duration="125" />
+        <item android:drawable="@drawable/dicetest4" android:duration="125" />
+        <item android:drawable="@drawable/dicetest5" android:duration="125" />
+        <item android:drawable="@drawable/dicetest6" android:duration="125" />
+
+</animation-list>

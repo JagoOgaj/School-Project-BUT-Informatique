@@ -1,0 +1,108 @@
+{
+  "objets": [
+    "bouclier_R",
+    "epee_R",
+    "lance_R",
+    "arc_R",
+    "grimoire_R",
+    "bouclier_SR",
+    "epee_SR",
+    "lance_SR",
+    "arc_SR",
+    "grimoire_SR"
+  ],
+  "nom": "La Horde Sauvage",
+  "lieu": "La Forêt de Griffe-Noire",
+  "enemies": [
+    {
+      "nom": "Morda, Roi des Bêtes",
+      "description": "Roi impitoyable des créatures sauvages, il utilise bêtes et monstres comme agents de chaos.",
+      "image": "morda_roi_des_betes",
+      "image_sansfond": "sf_morda_roi_des_betes",
+      "win": {
+        "dropPossible": ["bouclier_R", "epee_R","grimoire_R"],
+        "narration": "La défaite de Morda apaise les esprits des bêtes féroces, ramenant le calme dans la forêt."
+      },
+      "loose": {
+        "narration": "Morda déchaîne ses bêtes sur vous, et vous êtes submergé par une marée de griffes et de crocs."
+      },
+      "stats": {
+        "pv": 2,
+        "degats": "1d4",
+        "items": ["bouclier_R", "epee_R", "lance_R"]
+      }
+    },
+    {
+      "nom": "Gromm la Bête",
+      "description": "Puissante créature bestiale servant de général à Morda, semant la terreur.",
+      "image": "gromm_la_bete",
+      "image_sansfond": "sf_gromm_la_bete",
+      "win": {
+        "dropPossible": ["lance_R", "arc_R","clee_maudite"],
+        "narration": "Gromm tombe sous vos coups, et ses hurlements résonnent à travers la forêt."
+      },
+      "loose": {
+        "narration": "La rage de Gromm est inépuisable, et vous êtes rapidement submergé par sa fureur bestiale."
+      },
+      "stats": {
+        "pv": 3,
+        "degats": "1d6",
+        "items": ["arc_R", "grimoire_R", "bouclier_SR"]
+      }
+    },
+    {
+      "nom": "Garnar le Cornu",
+      "description": "Combattant féroce qui utilise sa force brute pour écraser les opposants.",
+      "image": "garnar_le_cornu",
+      "image_sansfond": "sf_garnar_le_cornu",
+      "win": {
+        "dropPossible": ["grimoire_R", "bouclier_SR","epee_SR"],
+        "narration": "Garnar s'effondre, son dernier rugissement étouffé par la victoire."
+      },
+      "loose": {
+        "narration": "La puissance brute de Garnar est insurmontable, et vous êtes renversé par son assaut dévastateur."
+      },
+      "stats": {
+        "pv": 3,
+        "degats": "2d3",
+        "items": ["epee_SR", "lance_SR", "arc_R"]
+      }
+    },
+    {
+      "nom": "Thorne le Berserker",
+      "description": "Guerrier féroce qui utilise sa rage inégalée pour pulvériser les lignes ennemies.",
+      "image": "thorne_le_berserker",
+      "image_sansfond": "sf_thorne_le_berserker",
+      "win": {
+        "dropPossible": ["epee_SR", "lance_SR","arc_SR"],
+        "narration": "Thorne est vaincu, sa fureur s'éteignant avec son dernier souffle."
+      },
+      "loose": {
+        "narration": "Vous ne parvenez pas à contenir la fureur de Thorne, qui balaye tout sur son passage."
+      },
+      "stats": {
+        "pv": 4,
+        "degats": "2d4",
+        "items": ["grimoire_SR", "bouclier_SR", "epee_SR"]
+      }
+    },
+    {
+      "nom": "Gorath le Guerrier",
+      "description": "Commandant des forces militaires de Morda, expert en tactiques de siège.",
+      "image": "gorath_le_guerrier",
+      "image_sansfond": "sf_gorath_le_guerrier",
+      "win": {
+        "dropPossible": ["arc_SR", "grimoire_SSR","epee_SSR"],
+        "narration": "Avec la chute de Gorath, le commandement des troupes ennemies s'effondre."
+      },
+      "loose": {
+        "narration": "La stratégie de Gorath vous surpasse, et vous êtes rapidement submergé par les forces ennemies."
+      },
+      "stats": {
+        "pv": 4,
+        "degats": "2d5",
+        "items": [ "lance_SR", "arc_SR", "grimoire_SR"]
+      }
+    }
+  ]
+}

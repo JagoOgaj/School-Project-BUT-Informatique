@@ -1,0 +1,15 @@
+{
+  "catalogues": [
+    {
+      "fichier": "niveau1.json",
+      "naration": "Ton village, un havre paisible dans le royaume de Paloria, est soudainement envahi par des créatures maléfiques. Armé de courage, tu prends les armes pour défendre ton foyer et te diriges vers les Cryptes Sombres, où des réponses aux attaques des envahisseurs pourraient être cachées." },
+    {
+      "fichier": "niveau2.json",
+      "naration": "Continuant ta quête, tu pénètres plus profondément dans les mystères de la Forêt de Griffe-Noire, un lieu où les ombres et les dangers se multiplient. Là, tu découvres une grotte isolée qui détient les secrets pour comprendre et repousser les forces maléfiques."
+    },
+    {
+      "fichier": "niveau3.json",
+      "naration": "Ton périple te mène aux Ruines Ensorcelées, le cœur des ténèbres où les créatures les plus terrifiantes ont établi leur bastion. Dans un affrontement épique, tu défies le mal dans son propre sanctuaire. Triomphant, tu assures la sécurité de Paloria et promets de veiller sur le royaume pour toujours."
+    }
+  ]
+}

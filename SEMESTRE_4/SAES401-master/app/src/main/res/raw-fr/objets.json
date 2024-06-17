@@ -1,0 +1,128 @@
+{
+  "bouclier_N": {
+    "nom": "bouclier normal",
+    "description": "Ajoute +1 au score",
+    "degat": "+1",
+    "image": "bouclier_n"
+  },
+  "bouclier_R": {
+    "nom": "bouclier rare",
+    "description": "Ajoute +2 au score",
+    "degat": "+2",
+    "image": "bouclier_r"
+  },
+  "bouclier_SR": {
+    "nom": "bouclier super rare",
+    "description": "Multiplie par 2 le score",
+    "degat": "x2",
+    "image": "bouclier_sr"
+  },
+  "bouclier_SSR": {
+    "nom": "bouclier super super rare",
+    "description": "Multiplie par 3 le score",
+    "degat": "x3",
+    "image": "bouclier_ssr"
+  },
+  "epee_N": {
+    "nom": "épée normale",
+    "description": "Ajoute +2 au score",
+    "degat": "+2",
+    "image": "epee_n"
+  },
+  "epee_R": {
+    "nom": "épée rare",
+    "description": "Ajoute +4 au score",
+    "degat": "+4",
+    "image": "epee_r"
+  },
+  "epee_SR": {
+    "nom": "épée super rare",
+    "description": "Multiplie par 2 le score",
+    "degat": "x2",
+    "image": "epee_sr"
+  },
+  "epee_SSR": {
+    "nom": "épée super super rare",
+    "description": "Multiplie par 3 le score",
+    "degat": "x3",
+    "image": "epee_ssr"
+  },
+  "lance_N": {
+    "nom": "lance normale",
+    "description": "Ajoute +2 au score",
+    "degat": "+2",
+    "image": "lance_n"
+  },
+  "lance_R": {
+    "nom": "lance rare",
+    "description": "Ajoute +5 au score",
+    "degat": "+5",
+    "image": "lance_r"
+  },
+  "lance_SR": {
+    "nom": "lance super rare",
+    "description": "Multiplie par 2 le score",
+    "degat": "x2",
+    "image": "lance_sr"
+  },
+  "lance_SSR": {
+    "nom": "lance super super rare",
+    "description": "Multiplie par 25 le score",
+    "degat": "x25",
+    "image": "lance_ssr"
+  },
+  "arc_N": {
+    "nom": "arc normal",
+    "description": "Ajoute +1 au score",
+    "degat": "+1",
+    "image": "arc_n"
+  },
+  "arc_R": {
+    "nom": "arc rare",
+    "description": "Ajoute +3 au score",
+    "degat": "+3",
+    "image": "arc_r"
+  },
+  "arc_SR": {
+    "nom": "arc super rare",
+    "description": "Multiplie par 2 le score",
+    "degat": "x2",
+    "image": "arc_sr"
+  },
+  "arc_SSR": {
+    "nom": "arc super super rare",
+    "description": "Multiplie par 25 le score",
+    "degat": "x25",
+    "image": "arc_ssr"
+  },
+  "grimoire_N": {
+    "nom": "grimoire normal",
+    "description": "Ajoute +3 au score",
+    "degat": "+3",
+    "image": "grimoire_n"
+  },
+  "grimoire_R": {
+    "nom": "grimoire rare",
+    "description": "Ajoute +6 au score",
+    "degat": "+6",
+    "image": "grimoire_r"
+  },
+  "grimoire_SR": {
+    "nom": "grimoire super rare",
+    "description": "Multiplie par 2 le score",
+    "degat": "x2",
+    "image": "grimoire_sr"
+  },
+  "grimoire_SSR": {
+    "nom": "grimoire super super rare",
+    "description": "Multiplie par 25 le score",
+    "degat": "x25",
+    "image": "grimoire_ssr"
+  },
+  "clee_maudite": {
+    "nom": "cle maudite",
+    "description" : "Cle maudite ayant des proprieter de teleportation a usage unique",
+    "degat": "",
+    "image": "cle"
+  }
+}

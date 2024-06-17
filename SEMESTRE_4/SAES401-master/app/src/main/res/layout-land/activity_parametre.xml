@@ -1,0 +1,120 @@
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+    <ImageView
+        android:id="@+id/imageforgeron"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/forgeronpaysage"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.101"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="16dp">
+
+        <TextView
+            android:id="@+id/volume"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:fontFamily="@font/dpcomic"
+            android:text="@string/volume"
+            android:textColor="#A3E34C"
+            android:textSize="30sp" />
+
+        <SeekBar
+            android:id="@+id/volumeSeekBar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:progressBackgroundTint="#FFFFFF"
+            android:progressTint="#A3E34C"
+            android:thumbTint="#A3E34C" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.392"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="16dp">
+
+        <TextView
+            android:id="@+id/langages"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:fontFamily="@font/dpcomic"
+            android:text="@string/langue"
+            android:textColor="#A3E34C"
+            android:textSize="30sp" />
+
+        <Spinner
+            android:id="@+id/languespinner"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:entries="@array/langues_array"
+            android:fontFamily="@font/dpcomic"
+            android:textColor="#A3E34C" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/mainButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:backgroundTint="#A3E34C"
+        android:fontFamily="@font/dpcomic"
+        android:padding="10dp"
+        android:text="@string/menu"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.662"
+        app:layout_constraintStart_toEndOf="@+id/sauvegardeButton"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/sauvegardeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:backgroundTint="#A3E34C"
+        android:fontFamily="@font/dpcomic"
+        android:padding="10dp"
+        android:text="@string/save"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.164"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+

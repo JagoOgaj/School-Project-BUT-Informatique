@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/arene"
+    tools:context=".GameActivity">
+
+    <Button
+        android:id="@+id/takeItem"
+        android:layout_width="166dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#A3E34C"
+        android:fontFamily="@font/dpcomic"
+        android:text="Use"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.465"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/resultTextGamplay"
+        app:layout_constraintVertical_bias="0.172" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="377dp"
+        android:layout_height="65dp"
+        android:rotation="180"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.03"
+        app:srcCompat="@drawable/bar" />
+
+    <ImageView
+        android:id="@+id/enemieImage"
+        android:layout_width="43dp"
+        android:layout_height="43dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView5"
+        app:layout_constraintEnd_toEndOf="@+id/imageView5"
+        app:layout_constraintHorizontal_bias="0.913"
+        app:layout_constraintStart_toStartOf="@+id/imageView5"
+        app:layout_constraintTop_toTopOf="@+id/imageView5"
+        app:layout_constraintVertical_bias="0.291" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="377dp"
+        android:layout_height="67dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.972"
+        app:srcCompat="@drawable/bar" />
+
+    <TextView
+        android:id="@+id/enemieName"
+        android:layout_width="182dp"
+        android:layout_height="25dp"
+        android:fontFamily="@font/dpcomic"
+        android:text="TextView"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.484"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.009" />
+
+    <LinearLayout
+        android:id="@+id/gameplay"
+        android:layout_width="311dp"
+        android:layout_height="73dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5"
+        app:layout_constraintVertical_bias="0.436" />
+
+    <TextView
+        android:id="@+id/resultTextGamplay"
+        android:layout_width="180dp"
+        android:layout_height="66dp"
+        android:gravity="center"
+        android:text="TextView"
+        android:fontFamily="@font/dpcomic"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gameplay"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <LinearLayout
+        android:id="@+id/choiseLoot"
+        android:layout_width="268dp"
+        android:layout_height="43dp"
+        android:layout_marginEnd="32dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.708" />
+
+    <LinearLayout
+        android:id="@+id/heartContainer1"
+        android:layout_width="215dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="108dp"
+        android:gravity="right"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/choiseLoot"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.718"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/resultTextGamplay"
+        app:layout_constraintVertical_bias="1.0"></LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/heartContainer2"
+        android:layout_width="224dp"
+        android:layout_height="21dp"
+        android:gravity="left"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/infoTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.203"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/enemieItems"
+        app:layout_constraintVertical_bias="0.139"></LinearLayout>
+
+    <ImageView
+        android:id="@+id/playerImage"
+        android:layout_width="43dp"
+        android:layout_height="43dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toStartOf="@+id/choiseLoot"
+        app:layout_constraintHorizontal_bias="0.647"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.708" />
+
+    <LinearLayout
+        android:id="@+id/enemieItems"
+        android:layout_width="224dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="52dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView5"
+        app:layout_constraintStart_toStartOf="@+id/imageView5"
+        app:layout_constraintTop_toTopOf="@+id/imageView5"
+        app:layout_constraintVertical_bias="0.269"></LinearLayout>
+
+    <TextView
+        android:id="@+id/scorePlayer"
+        android:layout_width="100dp"
+        android:layout_height="35dp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/playerImage"
+        app:layout_constraintEnd_toStartOf="@+id/heartContainer1"
+        app:layout_constraintHorizontal_bias="0.56"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/takeItem"
+        app:layout_constraintVertical_bias="0.891" />
+
+    <TextView
+        android:id="@+id/scoreEnemie"
+        android:layout_width="111dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginBottom="140dp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/gameplay"
+        app:layout_constraintEnd_toEndOf="@+id/imageView5"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/heartContainer2"
+        app:layout_constraintTop_toBottomOf="@+id/enemieImage"
+        app:layout_constraintVertical_bias="0.37" />
+
+    <TextView
+        android:id="@+id/currentLevel"
+        android:layout_width="91dp"
+        android:layout_height="43dp"
+        android:layout_marginBottom="88dp"
+        android:gravity="center"
+        android:fontFamily="@font/dpcomic"
+        android:textColor="@color/black"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/gameplay"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.043"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/heartContainer2" />
+
+    <TextView
+        android:id="@+id/infoTextView"
+        android:layout_width="299dp"
+        android:layout_height="51dp"
+        android:fontFamily="@font/dpcomic"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/gameplay"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5"
+        app:layout_constraintVertical_bias="0.642" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,108 @@
+{
+  "objets": [
+    "bouclier_SR",
+    "epee_SR",
+    "lance_SR",
+    "arc_SR",
+    "grimoire_SR",
+    "bouclier_SSR",
+    "epee_SSR",
+    "lance_SSR",
+    "arc_SSR",
+    "grimoire_SSR"
+  ],
+  "nom": "Les Conjurateurs Maudits",
+  "lieu": "Les Ruines Ensorcelées",
+  "enemies": [
+    {
+      "nom": "Zarek le Sorcier",
+      "description": "Sorcier paria, maître des arcanes interdits, il offre ses services pour renverser l'ordre naturel.",
+      "image": "zarek_le_sorcier",
+      "image_sansfond": "sf_zarek_le_sorcier",
+      "win": {
+        "dropPossible": ["bouclier_SR", "epee_SR","lance_SR"],
+        "narration": "Avec la défaite de Zarek, les ombres qui enveloppaient les ruines se dissipent lentement."
+      },
+      "loose": {
+        "narration": "La magie sombre de Zarek vous engloutit, vous laissant sans espoir face à ses pouvoirs anciens."
+      },
+      "stats": {
+        "pv": 3,
+        "degats": "1d6",
+        "items": ["bouclier_SR", "epee_SR", "lance_SR"]
+      }
+    },
+    {
+      "nom": "Helga l'Enchanteresse",
+      "description": "Utilise sa magie noire pour corrompre et contrôler, essentielle pour les plans de Zarek.",
+      "image": "helga_l_enchanteresse",
+      "image_sansfond": "sf_helga_l_enchanteresse",
+      "win": {
+        "dropPossible": ["lance_SR", "arc_SR","clee_maudite"],
+        "narration": "En brisant le sortilège de Helga, vous libérez les esprits qu'elle avait ensorcelés."
+      },
+      "loose": {
+        "narration": "Le charme de Helga vous submerge, vous liant à sa volonté."
+      },
+      "stats": {
+        "pv": 4,
+        "degats": "2d4",
+        "items": ["arc_SR", "grimoire_SR", "bouclier_SSR"]
+      }
+    },
+    {
+      "nom": "Baldur l'Ancien",
+      "description": "Gardien des connaissances anciennes et des sorts maléfiques, renforce les capacités magiques du groupe.",
+      "image": "baldur_l_ancien",
+      "image_sansfond": "sf_baldur_l_ancien",
+      "win": {
+        "dropPossible": ["grimoire_SR", "bouclier_SSR","lance_SSR"],
+        "narration": "Baldur, dépossédé de ses runes maléfiques, s'effondre, rendant ses pouvoirs à la terre."
+      },
+      "loose": {
+        "narration": "Les incantations de Baldur vous enveloppent dans un réseau de douleur et de désespoir."
+      },
+      "stats": {
+        "pv": 5,
+        "degats": "2d5",
+        "items": ["epee_SSR", "lance_SSR", "arc_SR"]
+      }
+    },
+    {
+      "nom": "Lyria la Sirène",
+      "description": "Utilise son chant pour hypnotiser et entraîner ses victimes dans les profondeurs pour les noyer.",
+      "image": "lyria_la_sirene",
+      "image_sansfond": "sf_lyria_la_sirene",
+      "win": {
+        "dropPossible": ["epee_SSR", "lance_SSR", "bouclier_SSR"],
+        "narration": "Le silence retombe sur les ruines alors que Lyria, vaincue, retourne aux profondeurs d'où elle venait."
+      },
+      "loose": {
+        "narration": "Le chant mélodieux de Lyria vous attire irrésistiblement vers une fin aquatique."
+      },
+      "stats": {
+        "pv": 5,
+        "degats": "3d4",
+        "items": ["grimoire_SSR", "bouclier_SSR", "epee_SSR"]
+      }
+    },
+    {
+      "nom": "Aldrok, le Chevalier Gobelin",
+      "description": "Assassin d'élite, exécute les ordres de Zarek avec une précision mortelle.",
+      "image": "aldrok_le_chevalier_gobelin",
+      "image_sansfond": "sf_aldrok_le_chevalier_gobelin",
+      "win": {
+        "dropPossible": ["arc_SSR", "grimoire_SSR", "epee_SSR"],
+        "narration": "Aldrok, privé de sa mission, tombe enfin, son dernier coup manqué."
+      },
+      "loose": {
+        "narration": "Rapide et mortel, Aldrok vous frappe là où vous vous y attendez le moins, mettant fin à votre quête."
+      },
+      "stats": {
+        "pv": 6,
+        "degats": "2d6",
+        "items": ["lance_SSR", "arc_SSR", "grimoire_SSR"]
+      }
+    }
+  ]
+}

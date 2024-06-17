@@ -1,0 +1,108 @@
+{
+  "objets": [
+    "bouclier_N",
+    "epee_N",
+    "lance_N",
+    "arc_N",
+    "grimoire_N",
+    "bouclier_R",
+    "epee_R",
+    "lance_R",
+    "arc_R",
+    "grimoire_R"
+  ],
+  "nom": "The Reign of Darkness",
+  "lieu": "The Dark Crypts",
+  "enemies": [
+    {
+      "nom": "Skull, Warrior of the Dead",
+      "description": "A merciless lieutenant of Lif, returned from beyond.",
+      "image": "skull_guerrier_des_morts",
+      "image_sansfond": "sf_skull_guerrier_des_morts",
+      "win": {
+        "dropPossible": ["epee_N", "lance_N","clee_maudite"],
+        "narration": "The defeat of Skull scatters the vengeful spirits that haunted the place."
+      },
+      "loose": {
+        "narration": "Skull's cursed blade finds you before you can react, and your soul joins his army."
+      },
+      "stats": {
+        "pv": 1,
+        "degats": "1d2",
+        "items": ["bouclier_N", "epee_N", "lance_N"]
+      }
+    },
+    {
+      "nom": "Skal the Necromancer",
+      "description": "Capable of reanimating the dead and creating an army from the beyond.",
+      "image": "skal_le_necromancien",
+      "image_sansfond": "sf_skal_le_necromancien",
+      "win": {
+        "dropPossible": ["epee_R", "arc_N", "lance_N"],
+        "narration": "By putting an end to Skal’s rituals, you stop the rising tide of the dead."
+      },
+      "loose": {
+        "narration": "Skal murmurs an incantation, and dead hands pull you underground."
+      },
+      "stats": {
+        "pv": 1,
+        "degats": "1d3",
+        "items": ["arc_N", "grimoire_N", "bouclier_N"]
+      }
+    },
+    {
+      "nom": "Grim the Reaper",
+      "description": "Harvester of wandering souls, strengthening Lif’s ranks.",
+      "image": "grim_le_faucheur",
+      "image_sansfond": "sf_grim_le_faucheur",
+      "win": {
+        "dropPossible": [ "bouclier_R", "arc_R", "lance_N"],
+        "narration": "The fall of Grim puts an end to the harvesting of innocent souls."
+      },
+      "loose": {
+        "narration": "Grim’s blades envelop you in a veil of darkness, sealing your fate."
+      },
+      "stats": {
+        "pv": 2,
+        "degats": "1d4",
+        "items": ["epee_R", "lance_N", "grimoire_N"]
+      }
+    },
+    {
+      "nom": "Eldrin the Wizard",
+      "description": "A specialist in illusions and manipulations, works to disorient the enemies of the King of the Dead.",
+      "image": "eldrin_le_magicien",
+      "image_sansfond": "sf_eldrin_le_magicien",
+      "win": {
+        "dropPossible": ["bouclier_N", "grimoire_R", "arc_R"],
+        "narration": "By outsmarting Eldrin’s illusions, you bring clarity back to the Dark Crypts."
+      },
+      "loose": {
+        "narration": "Eldrin’s illusions overwhelm you, losing you in a labyrinth of your own mind."
+      },
+      "stats": {
+        "pv": 2,
+        "degats": "1d5",
+        "items": [ "arc_R", "bouclier_R", "lance_R"]
+      }
+    },
+    {
+      "nom": "Lif, King of the Dead",
+      "description": "Master of darkness and sovereign of the beyond, draws his power from the suffering of souls.",
+      "image": "lif_roi_des_morts",
+      "image_sansfond": "sf_lif_roi_des_morts",
+      "win": {
+        "dropPossible": ["epee_R", "arc_SR", "lance_SR"],
+        "narration": "In defeating Lif, you have dispelled the shadows that enveloped the crypts."
+      },
+      "loose": {
+        "narration": "Lif crushes you under the weight of tortured souls, plunging the world into eternal darkness."
+      },
+      "stats": {
+        "pv": 3,
+        "degats": "2d4",
+        "items": ["epee_R", "grimoire_R", "arc_R"]
+      }
+    }
+  ]
+}

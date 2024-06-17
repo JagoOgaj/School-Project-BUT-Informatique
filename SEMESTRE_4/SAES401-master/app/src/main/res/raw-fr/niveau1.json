@@ -1,0 +1,108 @@
+{
+  "objets": [
+    "bouclier_N",
+    "epee_N",
+    "lance_N",
+    "arc_N",
+    "grimoire_N",
+    "bouclier_R",
+    "epee_R",
+    "lance_R",
+    "arc_R",
+    "grimoire_R"
+  ],
+  "nom": "Le Règne des Ténèbres",
+  "lieu": "Les Cryptes Sombres",
+  "enemies": [
+    {
+      "nom": "Skull, Guerrier des Morts",
+      "description": "Lieutenant impitoyable de Lif, revenu de l'au-delà.",
+      "image": "skull_guerrier_des_morts",
+      "image_sansfond": "sf_skull_guerrier_des_morts",
+      "win": {
+        "dropPossible": ["epee_N", "lance_N","clee_maudite"],
+        "narration": "La défaite de Skull disperse les esprits vengeurs qui hantaient les lieux."
+      },
+      "loose": {
+        "narration": "La lame maudite de Skull vous trouve avant que vous puissiez réagir, et votre âme rejoint son armée."
+      },
+      "stats": {
+        "pv": 1,
+        "degats": "1d2",
+        "items": ["bouclier_N", "epee_N", "lance_N"]
+      }
+    },
+    {
+      "nom": "Skal le Nécromancien",
+      "description": "Capable de réanimer les morts et de créer une armée d'outre-tombe.",
+      "image": "skal_le_necromancien",
+      "image_sansfond": "sf_skal_le_necromancien",
+      "win": {
+        "dropPossible": ["epee_R", "arc_N","lance_N"],
+        "narration": "En mettant fin aux rituels de Skal, vous arrêtez la marée montante des morts."
+      },
+      "loose": {
+        "narration": "Skal murmure une incantation, et des mains mortes vous tirent sous terre."
+      },
+      "stats": {
+        "pv": 1,
+        "degats": "1d3",
+        "items": ["arc_N", "grimoire_N", "bouclier_N"]
+      }
+    },
+    {
+      "nom": "Grim le Faucheur",
+      "description": "Moissonneur des âmes errantes, renforçant les rangs de Lif.",
+      "image": "grim_le_faucheur",
+      "image_sansfond": "sf_grim_le_faucheur",
+      "win": {
+        "dropPossible": [ "bouclier_R", "arc_R", "lance_N"],
+        "narration": "La chute de Grim met un terme à la récolte des âmes innocentes."
+      },
+      "loose": {
+        "narration": "Les lames de Grim vous enveloppent dans un voile de ténèbres, scellant votre destin."
+      },
+      "stats": {
+        "pv": 2,
+        "degats": "1d4",
+        "items": ["epee_R", "lance_N", "grimoire_N"]
+      }
+    },
+    {
+      "nom": "Eldrin le Magicien",
+      "description": "Spécialiste des illusions et des manipulations, travaille pour désorienter les ennemis du Roi des Morts.",
+      "image": "eldrin_le_magicien",
+      "image_sansfond": "sf_eldrin_le_magicien",
+      "win": {
+        "dropPossible": ["bouclier_N", "grimoire_R", "arc_R"],
+        "narration": "En déjouant les illusions d'Eldrin, vous ramenez la clarté aux Cryptes Sombres."
+      },
+      "loose": {
+        "narration": "Les illusions d'Eldrin vous submergent, vous perdant dans un labyrinthe de votre propre esprit."
+      },
+      "stats": {
+        "pv": 2,
+        "degats": "1d5",
+        "items": [ "arc_R", "bouclier_R", "lance_R"]
+      }
+    },
+    {
+      "nom": "Lif, Roi des Morts",
+      "description": "Maître des ténèbres et souverain de l'au-delà, tire sa puissance de la souffrance des âmes.",
+      "image": "lif_roi_des_morts",
+      "image_sansfond": "sf_lif_roi_des_morts",
+      "win": {
+        "dropPossible": ["epee_R", "arc_SR", "lance_SR"],
+        "narration": "En vainquant Lif, vous avez dissipé les ombres qui enveloppaient les cryptes."
+      },
+      "loose": {
+        "narration": "Lif vous écrase sous le poids des âmes torturées, plongeant le monde dans une obscurité éternelle."
+      },
+      "stats": {
+        "pv": 3,
+        "degats": "2d4",
+        "items": ["epee_R", "grimoire_R", "arc_R"]
+      }
+    }
+  ]
+}
