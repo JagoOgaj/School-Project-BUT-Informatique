@@ -5,3 +5,5 @@ Ce dossier contient les projets réalisés au cours du quatrième semestre de mo
 https://github.com/JagoOgaj/SAES5_Angular_IA
 
 https://github.com/JagoOgaj/SAE_S5
+
+https://github.com/JagoOgaj/fastApiWebSockectSAES5
